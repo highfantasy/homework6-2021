@@ -1,0 +1,67 @@
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+
+/* a.skip:focus{
+    position: absolute;
+} */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a:link, a:visited {
+    color: blue;
+}
+
+.card{
+    display: flex;
+    flex-basis: 450px;
+    flex-direction: column;
+}
+
+.card > header{
+    background: #288088;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px 20px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+.pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery #image1, #image2, #image3, #image4, #image5{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    /* width: 300px; */
+    flex-basis: 300px;
+}
+
+#logo{
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes mymove {
+    0% {width: 50px; opacity: 0;}
+    100% {width: 425px; opacity: 1;}
+    }
